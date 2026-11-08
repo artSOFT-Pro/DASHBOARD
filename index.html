@@ -727,7 +727,7 @@
     if (pwdModal) pwdModal.addEventListener('click', (e) => { if (e.target === pwdModal) closePwdModal(); });
 
     if (pwdSubmitBtn) pwdSubmitBtn.addEventListener('click', () => {
-        if (pwdInput.value === "artSOFT") {
+        if (pwdInput.value === "123456") {
             closePwdModal();
             if (pendingAction === 'logo') { setTimeout(() => logoInputEl.click(), 200); } else if (pendingAction === 'name') {
                 setTimeout(() => { companyNameEl.setAttribute('contenteditable', 'true'); companyNameEl.focus(); const selection = window.getSelection(); const range = document.createRange(); range.selectNodeContents(companyNameEl); range.collapse(false); selection.removeAllRanges(); selection.addRange(range); }, 200);
